@@ -39,7 +39,7 @@ class User extends Authenticatable
     {
         // check if the permission is available in any role
         foreach ($this->roles as $role) {
-            var_dump($role->hasAccess($permissions));
+//            var_dump($role->hasAccess($permissions));
             if($role->hasAccess($permissions)) {
                 return true;
             }

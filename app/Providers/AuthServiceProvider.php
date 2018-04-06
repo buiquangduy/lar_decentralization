@@ -27,7 +27,6 @@ class AuthServiceProvider extends ServiceProvider
     {
         $this->registerPolicies();
         $this->registerPostPolicies();
-        //
     }
 
     public function registerPostPolicies()
