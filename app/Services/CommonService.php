@@ -2,6 +2,8 @@
 
 namespace App\Services;
 
+use App\Traits\Sharable;
+
 class CommonService
 {
     const COMMON_SERVICE = 10;

@@ -3,14 +3,19 @@
 namespace App\Http\Controllers;
 
 use App\Facades\Commons\CommonService;
+use App\Traits\Sharable;
 use Illuminate\Http\Request;
 
+/**
+ * Class HomeController
+ * @package App\Http\Controllers
+ */
 class HomeController extends Controller
 {
+    use Sharable;
+
     /**
-     * Create a new controller instance.
-     *
-     * @return void
+     * HomeController constructor.
      */
     public function __construct()
     {
@@ -27,8 +32,13 @@ class HomeController extends Controller
         return view('home');
     }
 
+    /**
+     * Test function
+     */
     public function test()
     {
-        echo CommonService::testFacades();
+//        echo CommonService::testFacades();
+        echo $this->share("Thang");
     }
+
 }
