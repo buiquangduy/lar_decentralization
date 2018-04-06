@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+    <h1>tao la index {{$count}}</h1>
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
